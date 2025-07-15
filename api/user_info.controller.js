@@ -52,4 +52,20 @@ export default class UserInfoCtrl {
       return res.status(500).json({ error: "Internal server error" });
     }
   }
+
+  static async apiGetUserInfo(req, res) {
+    try {
+      const user = req.user;
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+      return res.status(200).json({
+        username: user.username,
+        email: user.email,
+      });
+    } catch (e) {
+      console.error(`Unable to get user info: ${e}`);
+      return res.status(500).json({ error: "Internal server error" });
+    }
+  } 
 }
