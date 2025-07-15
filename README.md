@@ -1,7 +1,7 @@
 # Backend for Weather Tracker application
 ## Hosting
 
-Hosted on Render [Link](https://nimbus-mmba.onrender.com)
+Hosted on Render [Link](https://nimbustracker.onrender.com/)
 
 ## Overview
 **Description :** A backend RestAPI using Nodejs express framework, MongoDB MongoClient, with JWT authentication allowing users to log in, register and add, retrieve or delete saved locations in MongoDB collections.
