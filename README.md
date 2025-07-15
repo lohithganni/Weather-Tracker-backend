@@ -1,7 +1,12 @@
 # Backend for Weather Tracker application
 
 ## Overview
-**Description :** A backend RestAPI using Nodejs express framework, MongoDB MongoClient With JWT authentication allowing users to login, register, retrieve, delete and add locations into MongoDB collections.
+**Description :** A backend RestAPI using Nodejs express framework, MongoDB MongoClient, with JWT authentication allowing users to log in, register and add, retrieve or delete saved locations in MongoDB collections.
+
+## Dependencies:
+- express, mongodb, cors, cookie-parser, jsonwebtoken, dotenv, uuid
+## Dev Dependencies:
+- nodemon
 
 **Getting Started :**
 1. Install dependencies with `npm install`
@@ -51,4 +56,5 @@
 
 ### User Info Route:
 - `GET /api/user` Verifies the JWT and sends the user info
+
 
